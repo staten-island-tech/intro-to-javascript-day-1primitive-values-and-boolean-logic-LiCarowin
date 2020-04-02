@@ -1,5 +1,4 @@
-/* 
-Data Types "Strings"
+/* Data Types "Strings"
 
 let string = "string"; //Strings can be stated with either single quotes
 const edis = "Edis"; //double quotes or with back ticks
@@ -84,5 +83,91 @@ if(school == "elementary") {
     console.log("You are in middle school");
 }   else {
     console.log("You are in high school");
+} */
+
+//////////Functions
+/* function test() { //scope of the function or what occurs when the funtion runes
+    console.log("I am a function");
 }
-*/
+test(); //calling the function
+ */
+/* function argument(argument){
+    console.log(argument);
+}
+//argument("Edis");
+function add(x, y){
+    return x + y; //return ends the function
+}
+//console.log(add (2, 7));
+let z = function add(x, y){
+    return x + y; //return ends the function
+}
+z(1, 11);
+console.log(z(1, 11);) */
+
+///////////Scoping
+//let x = "x";
+//const z = "z"; //cannot redefine with const, use const 99% of the time
+/* const hello = function (){
+    alert("hello";)
+};
+const bye = function (){
+    alert("bye");
+    alert("bye");
+    alert("bye");
+    alert("bye");
+    alert("bye");
+    alert("bye");
+    alert("bye");
+};
+
+function beatles{
+    hello();
+    bye();
+    hello();
+    bye();
+}
+beatles(); */
+
+//global or window scope
+/*function makeFunc () {
+    //function scope
+    const name = "Sun";
+    console.log(name);
+}
+ function hello (){
+    const name = "Jaiyu";
+    console.log(name);
+}
+hello();
+makeFunc(); */
+
+/* function makeFunc () {
+    //function scope
+    const name = "Sun";
+    function displayName(){
+        alert(name); //still has access to out variable name
+    }
+    return displayName; //returning the unner function
+}
+
+const myFunc = makeFunc ();
+myFunc(); */
+
+////////Arrays
+/* const names = ["Michelle", "Edis", "Richard", "Vincent", "Gisele"]; //starts from zero
+// const Gisele = names.slice(-1);
+         //Arrow functions and methods
+
+ names.forEach(name => console.log (name)); */
+//arrow function 1) Always returned 2) this is changed
+
+//////////Spread Operator ready?
+/* const numbers = [1, 2, 3];
+const add = function (x,y,z) {
+    return x + y + z;
+};
+console.log(add(...numbers)); */
+const numbers = [1, 50 , 34, 75, 11];
+const biggestNum = Math.max(...numbers);
+console.log(biggestNum);
