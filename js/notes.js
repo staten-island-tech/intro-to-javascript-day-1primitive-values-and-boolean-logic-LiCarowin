@@ -1,4 +1,5 @@
-/* Data Types "Strings"
+/* 
+/////////Data Types "Strings"
 
 let string = "string"; //Strings can be stated with either single quotes
 const edis = "Edis"; //double quotes or with back ticks
@@ -29,7 +30,7 @@ console.log(longerSentence);
 */
 
 /* 
-Primitive Data Types:Integers
+/////////////////Primitive Data Types:Integers
 
 let year = 2020;
 let nextYear = 2020 + 1;
@@ -41,7 +42,7 @@ console.log(past, lastYear, farFuture);
 */
 
 /*
-Booleans, Null, Undefined
+////////////////Booleans, Null, Undefined
 //let trueStatement = true;
 let falseStatement = false;
 
@@ -69,7 +70,7 @@ console.log(age >= 17);//
 //console.log(age == 16 && name === "Kristy");
 //console.log(age !== 1);
 
-///If statements
+////////////////If statements
 // let age = 17;
 if (age < 18){
     console.log("You are a child")
